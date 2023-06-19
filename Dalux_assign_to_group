@@ -1,0 +1,22 @@
+#Filter for settings is all in group/block and alle not assigned
+VERSION BUILD=1011 RECORDER=CR
+
+#just to press something can use whatever that is constant
+TAG POS=1 TYPE=DIV ATTR=TXT:Position
+WAIT SECONDS=3
+TAG POS=3 TYPE=DIV ATTR=TXT:Send
+
+#search for group 
+WAIT SECONDS=1
+TAG POS=1 TYPE=BUTTON ATTR=_NGCONTENT-DGA-C117:&&TYPE:button&&CLASS:btn<SP>btn-secondary
+WAIT SECONDS=1
+TAG POS=2 TYPE=INPUT:TEXT ATTR=ID:txtSearch CONTENT=7
+
+#Press group
+WAIT SECONDS=1
+TAG POS=1 TYPE=DIV ATTR=TXT:Zone<SP>7,<SP>KS<SP>dokumentation
+
+
+WAIT SECONDS=2
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Opret,<SP>send
+WAIT SECONDS=6
