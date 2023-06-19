@@ -9,10 +9,12 @@ TAG POS=3 TYPE=DIV ATTR=TXT:Send
 #search for group 
 WAIT SECONDS=1
 TAG POS=1 TYPE=BUTTON ATTR=_NGCONTENT-DGA-C117:&&TYPE:button&&CLASS:btn<SP>btn-secondary
+
+#change the block number
 WAIT SECONDS=1
 TAG POS=2 TYPE=INPUT:TEXT ATTR=ID:txtSearch CONTENT=7
 
-#Press group
+#Press group (Change the block number)
 WAIT SECONDS=1
 TAG POS=1 TYPE=DIV ATTR=TXT:Zone<SP>7,<SP>KS<SP>dokumentation
 
